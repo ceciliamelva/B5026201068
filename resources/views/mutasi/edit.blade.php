@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>5026201068</title>
-</head>
-<body>
+@extends('layout.ceria')
 
-	<h2>Tugas</h2>
-	<h3>Edit Mutasi</h3>
+@section('title', 'MUTASI PEGAWAI')
+
+@section('isikonten')
+
+@section('judulhalaman', 'EDIT MUTASI PEGAWAI')
 
 	<a href="/mutasi"> Kembali</a>
-
-	<br/>
-	<br/>
 
 	@foreach($mutasi as $m)
 	<form action="/mutasi/update" method="post">
@@ -26,5 +21,4 @@
 	@endforeach
 
 
-</body>
-</html>
+@endsection

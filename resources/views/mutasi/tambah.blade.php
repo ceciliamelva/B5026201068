@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>5026201068</title>
-</head>
-<body>
+@extends('layout.ceria')
 
-	<h2>Tugas</h2>
-	<h3>Data Mutasi</h3>
+@section('title', 'MUTASI PEGAWAI')
+
+@section('isikonten')
+
+@section('judulhalaman', 'TAMBAH MUTASI PEGAWAI')
 
 	<a href="/mutasi"> Kembali</a>
 
@@ -23,5 +21,4 @@
 		<input type="submit" value="Simpan Data">
 	</form>
 
-</body>
-</html>
+@endsection
