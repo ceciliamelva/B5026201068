@@ -23,7 +23,7 @@
 
 	<table class="table table-success table-striped">
 		<tr>
-
+            <th>No</th>
 			<th>Nama Pegawai</th>
 			<th>Tanggal</th>
 			<th>Status</th>
@@ -31,7 +31,7 @@
 		</tr>
 		@foreach($absen as $a)
 		<tr>
-
+            <td>{{ $loop->iteration }}</td>
 			<td>{{ $a->pegawai_nama }}</td>
 			<td>{{ $a->Tanggal }}</td>
 			<td>{{ $a->Status }}</td>

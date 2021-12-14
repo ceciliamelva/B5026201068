@@ -27,6 +27,7 @@
 	<table class="table table-success table-striped">
 		<tr>
 			{{-- <th>ID</th> --}}
+            <th>No</th>
 			<th>Pegawai</th>
 			<th>Departemen</th>
 			<th>SubDepartemen</th>
@@ -35,6 +36,7 @@
 		@foreach($mutasi as $m)
 		<tr>
 			{{-- <td>{{ $m->ID }}</td> --}}
+            <td>{{ $loop->iteration }}</td>
 			<td>{{ $m->pegawai_nama }}</td>
 			<td>{{ $m->Departemen }}</td>
 			<td>{{ $m->SubDepartemen }}</td>
