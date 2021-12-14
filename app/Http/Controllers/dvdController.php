@@ -43,20 +43,20 @@ class dvdController extends Controller
     }
 
     // method untuk view data dvd
-    public function view($id)
+    public function view($kode)
     {
         // mengambil data dvd berdasarkan id yang dipilih
-        $dvd = DB::table('dvd')->where('kodedvd',$id)->get();
+        $dvd = DB::table('dvd')->where('kodedvd',$kode)->get();
         // passing data pegawai yang didapat ke view edit.blade.php
         return view('dvd.detail',['dvd' => $dvd]);
 
     }
 
         // method untuk edit data dvd
-    public function edit($id)
+    public function edit($kode)
     {
         // mengambil data dvd berdasarkan id yang dipilih
-        $dvd = DB::table('dvd')->where('kodedvd',$id)->get();
+        $dvd = DB::table('dvd')->where('kodedvd',$kode)->get();
         // passing data dvd yang didapat ke view edit.blade.php
         return view('dvd.edit',['dvd' => $dvd]);
 
@@ -65,7 +65,7 @@ class dvdController extends Controller
     public function update(Request $request)
     {
         // update data dvd
-        DB::table('dvd')->where('kodedvd', $request->id)->update([
+        DB::table('dvd')->where('kodedvd', $request->kode)->update([
             'merkdvd' => $request->merk,
             'stockdvd' => $request->stock,
             'tersedia' => $request->tersedia
@@ -75,10 +75,10 @@ class dvdController extends Controller
     }
 
         // method untuk hapus data dvd
-    public function hapus($id)
+    public function hapus($kode)
     {
         // menghapus data dvd berdasarkan id yang dipilih
-        DB::table('dvd')->where('kodedvd',$id)->delete();
+        DB::table('dvd')->where('kodedvd',$kode)->delete();
 
         // alihkan halaman ke halaman dvd
         return redirect('/dvd');
