@@ -96,8 +96,9 @@
         left: 0;
         bottom: 0;
         width: 100%;
-        height: 7%;
+        height: 4%;
         color: #000000;
+        background-color: #f1eded;
         text-align: center;
     }
     .heading{
@@ -127,8 +128,7 @@
         <a class="nav-link" href="/pegawai" style="color: rgb(255, 255, 255);">Pegawai</a>
         <a class="nav-link" href="/absen" style="color: rgb(255, 255, 255);">Absen</a>
         <a class="nav-link" href="/mutasi" style="color: rgb(255, 255, 255);">Mutasi</a>
-        <a class="nav-link" href="#" style="color: rgb(255, 255, 255);">Minggu Depan</a>
-        <a class="nav-link" href="#" style="color: rgb(255, 255, 255);">Praktikum</a>
+        <a class="nav-link" href="/dvd" style="color: rgb(255, 255, 255);">DVD</a>
     </div>
 
     <div id="main">

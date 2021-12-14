@@ -13,8 +13,8 @@
                 @foreach($pegawai as $p)
                     <option value="{{ $p->pegawai_id }}"> {{ $p->pegawai_nama }}</option>
                 @endforeach
-            </select><br>
-        </div>
+            </select>
+        </div><br/><br/>
 
         <div class="col-md-1">
 		    <label for="dtpickerdemo" class="control-label" style="font-weight: lighter">Tanggal</label>
@@ -32,8 +32,7 @@
                     $('#dtpickerdemo').datetimepicker({format : "YYYY-MM-DD hh:mm", "defaultDate":new Date() });
                 });
             </script>
-        </div>
-        <br>
+        </div><br/><br/>
 
         <div class="col-md-1">Status</div>
         <div class="col-md-1">:</div>
@@ -42,7 +41,7 @@
             <label for="hadir">HADIR</label>
             <input type="radio" id="tidak" name="status" value="T" checked="checked">
             <label for="tidak">TIDAK HADIR</label>
-        </div>
+        </div><br/><br/>
 
         <input type="submit" value="Simpan Data" class="py-md-5 btn btn-primary" style="color: rgb(255, 255, 255);">
 	</form>
