@@ -81,4 +81,10 @@ Route::get('/dvd/edit/{id}','dvdController@edit');
 Route::post('/dvd/update','dvdController@update');
 Route::get('/dvd/hapus/{id}','dvdController@hapus');
 
+// Route CRUD nilaikuliah
+Route::get('/nilaikuliah','nilaikuliahController@index');
+Route::get('/nilaikuliah/cari','nilaikuliahController@cari');
+Route::get('/nilaikuliah/tambah','nilaikuliahController@tambah');
+Route::post('/nilaikuliah/store','nilaikuliahController@store');
+
 

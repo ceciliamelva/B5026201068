@@ -129,6 +129,7 @@
         <a class="nav-link" href="/absen" style="color: rgb(255, 255, 255);">Absen</a>
         <a class="nav-link" href="/mutasi" style="color: rgb(255, 255, 255);">Mutasi</a>
         <a class="nav-link" href="/dvd" style="color: rgb(255, 255, 255);">DVD</a>
+        <a class="nav-link" href="/nilaikuliah" style="color: rgb(255, 255, 255);">Nilai Kuliah</a>
     </div>
 
     <div id="main">
